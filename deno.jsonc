@@ -1,8 +1,12 @@
 {
+  "name": "@bmp/prefix-finder",
+  "version": "1.0.0",
+  "license": "MIT",
+  "exports": "./prefix_finder.ts",
   "tasks": {
     "dev": "deno run --watch main.ts"
   },
   "imports": {
     "@std/assert": "jsr:@std/assert@1"
-  }
+  },
 }
