@@ -1,0 +1,9 @@
+[language-server.deno]
+command = "deno"
+args = ["lsp"]
+
+[[language]]
+name = "typescript"
+file-types = ["ts", "js"]
+language-servers = ["deno", "codebook"]
+auto-format = true

@@ -1,0 +1,15 @@
+image: alpine/edge
+packages:
+  - deno
+sources:
+  - https://git.sr.ht/~bmp/prefix-finder
+tasks:
+  - check: |
+      cd prefix-finder
+      deno check
+      deno fmt --check
+      deno lint
+triggers:
+  - action: email
+    condition: failure
+    to: Benjamin Pollack <benjamin@bitquabit.com>
